@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <%- include('../partials/head', {title : 'Estabelecimento'}) %>
+    <%- include('../partials/head', {title : 'Estabelecimentos'}) %>
   </head>
   <body>
     <!-- Header -->
@@ -12,7 +12,7 @@
 
       <div class="options">
         <div id="return" onclick="menu()">
-          <span style="cursor: pointer;"><%= user.name %></span
+          <span><%= user.name %></span
           ><img class="icon_arrow" id="arrow" src="images/icons/arrow.svg" />
         </div>
         <img id="hamburger" src="images/icons/hamburger.svg" onclick="menu()" />
@@ -36,7 +36,6 @@
     <div class="class_filter">
       <img src="images/icons/filter.svg" onclick="filtrar()" />
       <span
-        style="color: #fffaf0"
         onclick="filtrar()">
         Filtrar
       </span>
